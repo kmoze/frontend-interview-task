@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Allowance } from '@/types/allowances'
 import { Inter } from 'next/font/google'
+import Card from '@/components/Card'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,13 +21,13 @@ const List = () => {
   return (
     <div>
       <h2
-        className={`${inter.className} text-2xl p-6 font-semibold text-[#163B3B]`}
+        className={`${inter.className} text-2xl px-6 pt-6 font-semibold text-[#163B3B]`}
       >
         Allowances
       </h2>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {allowances.map((allowance) => (
-          <div key={allowance.id}>{JSON.stringify(allowance)}</div>
+          <Card key={allowance.id} allowance={allowance} />
         ))}
       </div>
     </div>
