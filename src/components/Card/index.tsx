@@ -13,8 +13,8 @@ const Card = ({ allowance }: CardProps) => {
     (parseFloat(allowance.spent) / parseFloat(allowance.amount)) * 100
 
   return (
-    <div className="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm">
-      <div className="mb-4 space-y-1.5">
+    <div className="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between">
+      <div className="space-y-1.5">
         <h3
           className={`${inter.className} text-base font-medium text-[#232323]`}
         >
@@ -48,9 +48,13 @@ const Card = ({ allowance }: CardProps) => {
           </div>
         </div>
       ) : (
-        <button className={`${inter.className} text-[#569F6E] font-medium`}>
-          Activate card
-        </button>
+        <div className="-mx-6 -mb-6">
+          <div className="bg-[#FAFAFA] p-4 rounded-b-lg">
+            <button className={`${inter.className} text-[#569F6E] text-sm`}>
+              Activate card
+            </button>
+          </div>
+        </div>
       )}
     </div>
   )
