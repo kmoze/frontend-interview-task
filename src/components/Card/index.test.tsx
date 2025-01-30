@@ -35,7 +35,7 @@ describe('Card Component', () => {
     expect(getByText('Lunch')).toBeInTheDocument()
     expect(getByText('Spend Card')).toBeInTheDocument()
     expect(getByText('50% utilised')).toBeInTheDocument()
-    expect(getByText('£100 / Month')).toBeInTheDocument()
+    expect(getByText('£100 / month')).toBeInTheDocument()
 
     const progressBar = getByTestId('progress-bar')
     expect(progressBar).toBeInTheDocument()

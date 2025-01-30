@@ -43,11 +43,9 @@ const Card = ({ allowance }: CardProps) => {
             <span className={`${COLOURS.primaryText} text-sm font-medium`}>
               {Math.round(spentPercentage)}% utilised
             </span>
-            <span className={`${COLOURS.amountText} text-sm`}>
+            <span className={`${COLOURS.amountText} text-sm capitalize`}>
               {allowance.currency}
-              {allowance.amount} /{' '}
-              {allowance.renewal.charAt(0).toUpperCase() +
-                allowance.renewal.slice(1)}
+              {allowance.amount} / {allowance.renewal}
             </span>
           </div>
           <div className={`${COLOURS.progressBarFill} w-full h-1 rounded-full`}>

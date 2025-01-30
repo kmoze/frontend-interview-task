@@ -34,13 +34,12 @@ exports[`Card Component renders with a snapshot 1`] = `
           % utilised
         </span>
         <span
-          class="text-[#9A9A9A] text-sm"
+          class="text-[#9A9A9A] text-sm capitalize"
         >
           £
           100
-           /
-           
-          Month
+           / 
+          month
         </span>
       </div>
       <div

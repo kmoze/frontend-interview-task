@@ -45,13 +45,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               100
-               /
-               
-              Month
+               / 
+              month
             </span>
           </div>
           <div
@@ -97,13 +96,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               150
-               /
-               
-              Month
+               / 
+              month
             </span>
           </div>
           <div
@@ -149,13 +147,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               1000
-               /
-               
-              Year
+               / 
+              year
             </span>
           </div>
           <div
@@ -273,13 +270,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               100
-               /
-               
-              Year
+               / 
+              year
             </span>
           </div>
           <div
@@ -325,13 +321,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               30
-               /
-               
-              Month
+               / 
+              month
             </span>
           </div>
           <div
@@ -377,13 +372,12 @@ exports[`List matches snapshot after data loads 1`] = `
               % utilised
             </span>
             <span
-              class="text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm capitalize"
             >
               £
               400
-               /
-               
-              Year
+               / 
+              year
             </span>
           </div>
           <div
