@@ -12,19 +12,20 @@ exports[`List matches snapshot after data loads 1`] = `
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
     >
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Learning & Development
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Expense
           </p>
@@ -36,13 +37,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               20
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               100
@@ -55,7 +56,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 20%;"
             />
@@ -63,19 +64,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Wellbeing
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -87,13 +89,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               93
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               150
@@ -106,7 +108,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 93.33333333333333%;"
             />
@@ -114,19 +116,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             WFH
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -138,13 +141,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               80
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               1000
@@ -157,7 +160,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 80%;"
             />
@@ -165,19 +168,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Lunch
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -189,7 +193,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="className text-[#569F6E] text-sm relative"
+              class="bg-[#FAFAFA] text-sm relative"
             >
               Activate card
               <span
@@ -200,19 +204,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Team Day
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -224,7 +229,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="className text-[#569F6E] text-sm relative"
+              class="bg-[#FAFAFA] text-sm relative"
             >
               Activate card
               <span
@@ -235,19 +240,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Birthday
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -259,13 +265,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               100
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               100
@@ -278,7 +284,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 100%;"
             />
@@ -286,19 +292,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Software
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -310,13 +317,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               30
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               30
@@ -329,7 +336,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 29.96666666666667%;"
             />
@@ -337,19 +344,20 @@ exports[`List matches snapshot after data loads 1`] = `
         </div>
       </div>
       <div
-        class="group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
+        class="className group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
         data-testid="allowance-card"
       >
         <div
           class="space-y-1.5"
         >
           <h3
-            class="className text-base font-medium text-[#232323]"
+            class="text-base font-medium text-[#232323]"
           >
             Team Budget
           </h3>
           <p
-            class="className text-sm text-[#797979] font-normal"
+            class="text-sm text-[#797979] font-normal"
           >
             Spend Card
           </p>
@@ -361,13 +369,13 @@ exports[`List matches snapshot after data loads 1`] = `
             class="flex justify-between mb-2"
           >
             <span
-              class="className text-[#232323] text-sm font-medium"
+              class="text-[#232323] text-sm font-medium"
             >
               31
               % utilised
             </span>
             <span
-              class="className text-[#9A9A9A] text-sm"
+              class="text-[#9A9A9A] text-sm"
             >
               £
               400
@@ -380,7 +388,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="w-full h-1 bg-[#DDDDDD] rounded-full"
           >
             <div
-              class="h-full bg-[#64D98A] rounded-full"
+              class="bg-[#64D98A] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 31.25%;"
             />
