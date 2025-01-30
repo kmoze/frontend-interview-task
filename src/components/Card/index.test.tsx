@@ -7,7 +7,7 @@ import { Allowance } from '@/types/allowances'
 const mockAllowanceActive: Allowance = {
   id: 1,
   name: 'Lunch',
-  renewal: 'month', // Matches the literal type
+  renewal: 'month',
   currency: '£',
   amount: '100',
   spent: '50',
@@ -18,7 +18,7 @@ const mockAllowanceActive: Allowance = {
 const mockAllowanceInactive: Allowance = {
   id: 2,
   name: 'Team Day',
-  renewal: 'year', // Matches the literal type
+  renewal: 'year',
   currency: '£',
   amount: '200',
   spent: '0',
@@ -28,7 +28,7 @@ const mockAllowanceInactive: Allowance = {
 
 describe('Card Component', () => {
   it('renders correctly for active allowances', () => {
-    const { getByText, getByTestId, container } = render(
+    const { getByText, getByTestId } = render(
       <Card allowance={mockAllowanceActive} />
     )
 
@@ -45,11 +45,14 @@ describe('Card Component', () => {
     expect(getByText('£100 / Month')).toBeInTheDocument()
 
     // Check that the progress bar exists
-    expect(container.querySelector('.bg-[#64D98A]')).toBeInTheDocument()
+    const progressBar = getByTestId('progress-bar')
+    expect(progressBar).toBeInTheDocument()
+
+    expect(progressBar).toHaveStyle('width: 50%')
   })
 
   it('renders correctly for inactive allowances', () => {
-    const { getByText, container } = render(
+    const { getByText, queryByTestId } = render(
       <Card allowance={mockAllowanceInactive} />
     )
 
@@ -63,7 +66,7 @@ describe('Card Component', () => {
     expect(getByText('Activate card')).toBeInTheDocument()
 
     // Check that the utilisation progress bar does not exist
-    expect(container.querySelector('.bg-[#64D98A]')).not.toBeInTheDocument()
+    expect(queryByTestId('progress-bar')).not.toBeInTheDocument()
   })
 
   it('renders utilisation bar width correctly', () => {
