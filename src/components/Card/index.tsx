@@ -33,7 +33,7 @@ const Card = ({ allowance, colour }: CardProps) => {
       ? DARK_ACTIVATE_TEXT_COLOUR
       : `text-[${colour}]`
 
-  const activeHoverColour = colour ? `bg-[${colour}]` : CARD_COLOURS.activeHover
+  const activeHoverColour = colour ? `bg-[${colour}]` : null
 
   return (
     <div
