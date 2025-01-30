@@ -15,8 +15,6 @@ const CARD_COLOURS = {
   progressBarFill: 'bg-[#DDDDDD]',
   progressBar: 'bg-[#64D98A]',
   activateBg: 'bg-[#FAFAFA]',
-  activateText: 'text-[#569F6E]',
-  activeHover: 'bg-[#569F6E]',
 }
 
 const Card = ({ allowance, colour }: CardProps) => {
