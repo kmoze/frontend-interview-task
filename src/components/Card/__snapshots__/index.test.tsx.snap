@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component renders with a snapshot 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between"
+  >
+    <div
+      class="space-y-1.5"
+    >
+      <h3
+        class="className text-base font-medium text-[#232323]"
+      >
+        Lunch
+      </h3>
+      <p
+        class="className text-sm text-[#797979] font-normal"
+      >
+        Spend Card
+      </p>
+    </div>
+    <div
+      class="space-y-[-0.25rem]"
+    >
+      <div
+        class="flex justify-between mb-2"
+      >
+        <span
+          class="className text-[#232323] text-sm font-medium"
+        >
+          50
+          % utilised
+        </span>
+        <span
+          class="className text-[#9A9A9A] text-sm"
+        >
+          £
+          100
+           /
+           
+          Month
+        </span>
+      </div>
+      <div
+        class="w-full h-1 bg-[#DDDDDD] rounded-full"
+      >
+        <div
+          class="h-full bg-[#64D98A] rounded-full"
+          data-testid="progress-bar"
+          style="width: 50%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
