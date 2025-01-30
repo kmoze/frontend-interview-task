@@ -10,49 +10,37 @@ exports[`List matches snapshot after data loads 1`] = `
     >
       <button
         aria-label="Select defaultGreen theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(86, 159, 110);"
       />
       <button
         aria-label="Select cherryRed theme"
-        class="w-8 h-8 rounded-full border-2 border-black
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-black hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(116, 7, 14);"
       />
       <button
         aria-label="Select butterYellow theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(255, 237, 168);"
       />
       <button
         aria-label="Select auraIndigo theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(176, 166, 222);"
       />
       <button
         aria-label="Select dillGreen theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(78, 184, 19);"
       />
       <button
         aria-label="Select alpineOat theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100
-          hover:scale-110 transition-transform
-          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(240, 231, 218);"
       />
