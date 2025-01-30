@@ -1,8 +1,5 @@
 import React from 'react'
 import { Allowance } from '@/types/allowances'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 type CardProps = {
   allowance: Allowance
@@ -27,7 +24,7 @@ const Card = ({ allowance }: CardProps) => {
 
   return (
     <div
-      className={`${inter.className} group ${COLOURS.cardBg} rounded-lg p-6 border ${COLOURS.border} shadow-sm min-h-[185px] flex flex-col justify-between
+      className={`group ${COLOURS.cardBg} rounded-lg p-6 border ${COLOURS.border} shadow-sm min-h-[185px] flex flex-col justify-between
              hover:shadow-md hover:scale-105 transition-transform duration-300`}
       data-testid="allowance-card"
     >
