@@ -32,19 +32,11 @@ describe('Card Component', () => {
       <Card allowance={mockAllowanceActive} />
     )
 
-    // Check that the card name is displayed
     expect(getByText('Lunch')).toBeInTheDocument()
-
-    // Check that the type (Spend Card) is displayed
     expect(getByText('Spend Card')).toBeInTheDocument()
-
-    // Check the utilisation percentage is displayed
     expect(getByText('50% utilised')).toBeInTheDocument()
-
-    // Check the currency, amount, and renewal period
     expect(getByText('£100 / Month')).toBeInTheDocument()
 
-    // Check that the progress bar exists
     const progressBar = getByTestId('progress-bar')
     expect(progressBar).toBeInTheDocument()
 
@@ -56,23 +48,15 @@ describe('Card Component', () => {
       <Card allowance={mockAllowanceInactive} />
     )
 
-    // Check that the card name is displayed
     expect(getByText('Team Day')).toBeInTheDocument()
-
-    // Check that the type (Spend Card) is displayed
     expect(getByText('Spend Card')).toBeInTheDocument()
-
-    // Check that the "Activate card" button is displayed
     expect(getByText('Activate card')).toBeInTheDocument()
-
-    // Check that the utilisation progress bar does not exist
     expect(queryByTestId('progress-bar')).not.toBeInTheDocument()
   })
 
   it('renders utilisation bar width correctly', () => {
     const { getByTestId } = render(<Card allowance={mockAllowanceActive} />)
 
-    // Verify that the utilisation bar has the correct width (50% for this test)
     const progressBar = getByTestId('progress-bar')
     expect(progressBar).toHaveStyle('width: 50%')
   })
