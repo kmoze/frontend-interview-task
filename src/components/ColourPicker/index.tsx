@@ -1,14 +1,31 @@
 import React from 'react'
-import { colourOptions } from '@/constants/colourOptions'
 
-type ColourPickerProps = {
-  colours: { [key: string]: string } // Object of color names and hex codes
-  selectedColour: string // Currently selected color (hex code)
-  onColorSelect: (colour: string) => void // Callback when a color is selected
+interface ColourPickerProps {
+  colours: { [key: string]: string }
+  selectedColour: string
+  onColourSelect: (colour: string) => void
 }
 
-const ColourPicker = (): ColourPickerProps => {
-  return <div>ColourPicker</div>
+const ColourPicker: React.FC<ColourPickerProps> = ({
+  colours,
+  selectedColour,
+  onColourSelect,
+}) => {
+  return (
+    <div className="fixed bottom-6 right-6 flex gap-2">
+      {Object.entries(colours).map(([name, colour]) => (
+        <button
+          key={name}
+          onClick={() => onColourSelect(colour)}
+          className={`w-8 h-8 rounded-full border-2 ${
+            selectedColour === colour ? 'border-black' : 'border-gray-300'
+          } hover:border-gray-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500`}
+          style={{ backgroundColor: colour }}
+          aria-label={`Select ${name} theme`}
+        />
+      ))}
+    </div>
+  )
 }
 
 export default ColourPicker

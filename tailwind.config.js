@@ -2,6 +2,18 @@
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  safelist: [
+    'bg-[#74070E]', // Cherry Red
+    'text-[#74070E]',
+    'bg-[#FFEDA8]', // Butter Yellow
+    'text-[#FFEDA8]',
+    'bg-[#B0A6DE]', // Aura Indigo
+    'text-[#B0A6DE]',
+    'bg-[#4EB813]', // Dill Green
+    'text-[#4EB813]',
+    'bg-[#F0E7DA]', // Alpine Oat
+    'text-[#F0E7DA]',
+  ],
   theme: {
     colors: {
       transparent: 'transparent',

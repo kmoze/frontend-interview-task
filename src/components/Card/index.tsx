@@ -3,9 +3,10 @@ import { Allowance } from '@/types/allowances'
 
 type CardProps = {
   allowance: Allowance
+  colour?: string
 }
 
-const COLOURS = {
+const CARD_COLOURS = {
   cardBg: 'bg-white',
   primaryText: 'text-[#232323]',
   secondaryText: 'text-[#797979]',
@@ -18,21 +19,27 @@ const COLOURS = {
   activeHover: 'bg-[#569F6E]',
 }
 
-const Card = ({ allowance }: CardProps) => {
+const Card = ({ allowance, colour }: CardProps) => {
   const spentPercentage =
     (parseFloat(allowance.spent) / parseFloat(allowance.amount)) * 100
 
+  const progressBarColour = colour ? `bg-[${colour}]` : CARD_COLOURS.progressBar
+  const activateTextColour = colour
+    ? `text-[${colour}]`
+    : CARD_COLOURS.activateText
+  const activeHoverColour = colour ? `bg-[${colour}]` : CARD_COLOURS.activeHover
+
   return (
     <div
-      className={`group ${COLOURS.cardBg} rounded-lg p-6 border ${COLOURS.border} shadow-sm min-h-[185px] flex flex-col justify-between
+      className={`group ${CARD_COLOURS.cardBg} rounded-lg p-6 border ${CARD_COLOURS.border} shadow-sm min-h-[185px] flex flex-col justify-between
              hover:shadow-md hover:scale-105 transition-transform duration-300`}
       data-testid="allowance-card"
     >
       <div className="space-y-1.5">
-        <h3 className={`text-base font-medium ${COLOURS.primaryText}`}>
+        <h3 className={`text-base font-medium ${CARD_COLOURS.primaryText}`}>
           {allowance.name}
         </h3>
-        <p className={`text-sm ${COLOURS.secondaryText} font-normal`}>
+        <p className={`text-sm ${CARD_COLOURS.secondaryText} font-normal`}>
           {allowance.type === 'card' ? 'Spend Card' : 'Expense'}
         </p>
       </div>
@@ -40,17 +47,19 @@ const Card = ({ allowance }: CardProps) => {
       {allowance.active ? (
         <div className="space-y-[-0.25rem]">
           <div className="flex justify-between mb-2">
-            <span className={`${COLOURS.primaryText} text-sm font-medium`}>
+            <span className={`${CARD_COLOURS.primaryText} text-sm font-medium`}>
               {Math.round(spentPercentage)}% utilised
             </span>
-            <span className={`${COLOURS.amountText} text-sm capitalize`}>
+            <span className={`${CARD_COLOURS.amountText} text-sm capitalize`}>
               {allowance.currency}
               {allowance.amount} / {allowance.renewal}
             </span>
           </div>
-          <div className={`${COLOURS.progressBarFill} w-full h-1 rounded-full`}>
+          <div
+            className={`${CARD_COLOURS.progressBarFill} w-full h-1 rounded-full`}
+          >
             <div
-              className={`${COLOURS.progressBar} h-full rounded-full`}
+              className={`${progressBarColour} h-full rounded-full`}
               style={{ width: `${spentPercentage}%` }}
               data-testid="progress-bar"
             />
@@ -58,11 +67,11 @@ const Card = ({ allowance }: CardProps) => {
         </div>
       ) : (
         <div className="-mx-6 -mb-6">
-          <div className={`${COLOURS.activateBg} p-4 rounded-b-lg`}>
-            <button className={`${COLOURS.activateText} text-sm relative`}>
+          <div className={`${CARD_COLOURS.activateBg} p-4 rounded-b-lg`}>
+            <button className={`${activateTextColour} text-sm relative`}>
               Activate card
               <span
-                className={`${COLOURS.activeHover} absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
+                className={`${activeHoverColour} absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full`}
               ></span>
             </button>
           </div>
