@@ -18,8 +18,11 @@ const ColourPicker: React.FC<ColourPickerProps> = ({
           key={name}
           onClick={() => onColourSelect(colour)}
           className={`w-8 h-8 rounded-full border-2 ${
-            selectedColour === colour ? 'border-black' : 'border-gray-300'
-          } hover:border-gray-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500`}
+            selectedColour === colour ? 'border-black' : 'border-gray-100'
+          }
+          hover:scale-110 transition-transform
+          hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500`}
           style={{ backgroundColor: colour }}
           aria-label={`Select ${name} theme`}
         />
