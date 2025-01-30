@@ -13,6 +13,7 @@ module.exports = {
     'text-[#4EB813]',
     'bg-[#F0E7DA]', // Alpine Oat
     'text-[#F0E7DA]',
+    'text-[#163B3B]',
   ],
   theme: {
     colors: {

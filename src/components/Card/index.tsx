@@ -24,9 +24,15 @@ const Card = ({ allowance, colour }: CardProps) => {
     (parseFloat(allowance.spent) / parseFloat(allowance.amount)) * 100
 
   const progressBarColour = colour ? `bg-[${colour}]` : CARD_COLOURS.progressBar
-  const activateTextColour = colour
-    ? `text-[${colour}]`
-    : CARD_COLOURS.activateText
+
+  const LIGHT_COLOURS = ['#FFEDA8', '#F0E7DA'] // Alpine Oat & Butter Yellow
+  const DARK_ACTIVATE_TEXT_COLOUR = 'text-[#163B3B]' // Darker alternative
+
+  const activateTextColour =
+    colour && LIGHT_COLOURS.includes(colour)
+      ? DARK_ACTIVATE_TEXT_COLOUR
+      : `text-[${colour}]`
+
   const activeHoverColour = colour ? `bg-[${colour}]` : CARD_COLOURS.activeHover
 
   return (
