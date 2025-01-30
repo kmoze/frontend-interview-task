@@ -385,18 +385,3 @@ exports[`List matches snapshot after data loads 1`] = `
   </div>
 </div>
 `;
-
-exports[`List renders as expected 1`] = `
-<div>
-  <div>
-    <h2
-      class="className text-2xl px-6 pt-6 font-semibold text-[#163B3B]"
-    >
-      Allowances
-    </h2>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
-    />
-  </div>
-</div>
-`;

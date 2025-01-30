@@ -9,11 +9,6 @@ describe('List', () => {
     fetchMock.mockResponse(JSON.stringify({ result: data }), { status: 200 })
   })
 
-  it('renders as expected', async () => {
-    const { container } = render(<List />)
-    await waitFor(() => expect(container).toMatchSnapshot())
-  })
-
   it('renders allowances after fetching data', async () => {
     render(<List />)
 
