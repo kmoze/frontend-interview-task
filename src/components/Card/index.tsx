@@ -8,21 +8,31 @@ type CardProps = {
   allowance: Allowance
 }
 
+const COLOURS = {
+  primaryText: 'text-[#232323]',
+  secondaryText: 'text-[#797979]',
+  amountText: 'text-[#9A9A9A]',
+  border: 'border-[#DDDDDD]',
+  progressBar: 'bg-[#64D98A]',
+  activateBg: 'bg-[#FAFAFA]',
+  activateText: 'text-[#569F6E]',
+}
+
 const Card = ({ allowance }: CardProps) => {
   const spentPercentage =
     (parseFloat(allowance.spent) / parseFloat(allowance.amount)) * 100
 
   return (
     <div
-      className={`${inter.className} group bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+      className={`${inter.className} group bg-white rounded-lg p-6 border ${COLOURS.border} shadow-sm min-h-[185px] flex flex-col justify-between
              hover:shadow-md hover:scale-105 transition-transform duration-300`}
       data-testid="allowance-card"
     >
       <div className="space-y-1.5">
-        <h3 className="text-base font-medium text-[#232323]">
+        <h3 className={`text-base font-medium ${COLOURS.primaryText}`}>
           {allowance.name}
         </h3>
-        <p className="text-sm text-[#797979] font-normal">
+        <p className={`text-sm ${COLOURS.secondaryText} font-normal`}>
           {allowance.type === 'card' ? 'Spend Card' : 'Expense'}
         </p>
       </div>
@@ -30,10 +40,10 @@ const Card = ({ allowance }: CardProps) => {
       {allowance.active ? (
         <div className="space-y-[-0.25rem]">
           <div className="flex justify-between mb-2">
-            <span className="text-[#232323] text-sm font-medium">
+            <span className={`${COLOURS.primaryText} text-sm font-medium`}>
               {Math.round(spentPercentage)}% utilised
             </span>
-            <span className="text-[#9A9A9A] text-sm">
+            <span className={`${COLOURS.amountText} text-sm`}>
               {allowance.currency}
               {allowance.amount} /{' '}
               {allowance.renewal.charAt(0).toUpperCase() +
@@ -42,7 +52,7 @@ const Card = ({ allowance }: CardProps) => {
           </div>
           <div className="w-full h-1 bg-[#DDDDDD] rounded-full">
             <div
-              className="h-full bg-[#64D98A] rounded-full"
+              className={`${COLOURS.progressBar} h-full rounded-full`}
               style={{ width: `${spentPercentage}%` }}
               data-testid="progress-bar"
             />
@@ -50,8 +60,8 @@ const Card = ({ allowance }: CardProps) => {
         </div>
       ) : (
         <div className="-mx-6 -mb-6">
-          <div className="bg-[#FAFAFA] p-4 rounded-b-lg">
-            <button className="text-[#569F6E] text-sm relative">
+          <div className={`${COLOURS.activateBg} p-4 rounded-b-lg`}>
+            <button className={`${COLOURS.activateBg} text-sm relative`}>
               Activate card
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#569F6E] transition-all duration-300 group-hover:w-full"></span>
             </button>
