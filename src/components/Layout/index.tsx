@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <div className="bg-green-400 flex fixed items-center md:items-stretch md:flex-col md:w-72 h-16 md:h-screen md:inset-y-0 inset-x-0 md:space-y-4 space-x-3 md:space-x-0 px-3 py-3 md:py-4">
+      <div className="bg-green-400 z-10 flex fixed items-center md:items-stretch md:flex-col md:w-72 h-16 md:h-screen md:inset-y-0 inset-x-0 md:space-y-4 space-x-3 md:space-x-0 px-3 py-3 md:py-4">
         <div className="flex items-center space-x-2">
           <div className="rounded-md overflow-hidden">
             <Icon icon="logo" width={33} height={33} />
