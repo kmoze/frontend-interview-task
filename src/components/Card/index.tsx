@@ -14,7 +14,8 @@ const Card = ({ allowance }: CardProps) => {
 
   return (
     <div
-      className="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between"
+      className="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between
+             hover:shadow-md hover:scale-105 transition-transform duration-300"
       data-testid="allowance-card"
     >
       <div className="space-y-1.5">

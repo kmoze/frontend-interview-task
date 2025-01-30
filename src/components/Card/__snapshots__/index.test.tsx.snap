@@ -3,7 +3,7 @@
 exports[`Card Component renders with a snapshot 1`] = `
 <div>
   <div
-    class="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between"
+    class="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between hover:shadow-md hover:scale-105 transition-transform duration-300"
     data-testid="allowance-card"
   >
     <div
