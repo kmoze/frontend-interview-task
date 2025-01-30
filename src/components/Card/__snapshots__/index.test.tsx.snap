@@ -4,6 +4,7 @@ exports[`Card Component renders with a snapshot 1`] = `
 <div>
   <div
     class="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm min-h-[185px] flex flex-col justify-between"
+    data-testid="allowance-card"
   >
     <div
       class="space-y-1.5"
