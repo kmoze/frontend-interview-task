@@ -44,6 +44,7 @@ const Card = ({ allowance }: CardProps) => {
             <div
               className="h-full bg-[#64D98A] rounded-full"
               style={{ width: `${spentPercentage}%` }}
+              data-testid="progress-bar"
             />
           </div>
         </div>
