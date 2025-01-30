@@ -1,5 +1,8 @@
 import React from 'react'
 import { Allowance } from '@/types/allowances'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 type CardProps = {
   allowance: Allowance
@@ -11,20 +14,26 @@ const Card = ({ allowance }: CardProps) => {
 
   return (
     <div className="bg-white rounded-lg p-6 border border-[#DDDDDD] shadow-sm">
-      <div className="mb-4">
-        <h3 className="text-lg font-medium text-[#232323]">{allowance.name}</h3>
-        <p className="text-[#797979] font-normal">
+      <div className="mb-4 space-y-1.5">
+        <h3
+          className={`${inter.className} text-base font-medium text-[#232323]`}
+        >
+          {allowance.name}
+        </h3>
+        <p className={`${inter.className} text-sm text-[#797979] font-normal`}>
           {allowance.type === 'card' ? 'Spend Card' : 'Expense'}
         </p>
       </div>
 
       {allowance.active ? (
-        <div>
+        <div className="space-y-[-0.25rem]">
           <div className="flex justify-between mb-2">
-            <span className="text-[#232323]">
+            <span
+              className={`${inter.className} text-[#232323] text-sm font-medium`}
+            >
               {Math.round(spentPercentage)}% utilised
             </span>
-            <span className="text-[#9A9A9A]">
+            <span className={`${inter.className} text-[#9A9A9A] text-sm`}>
               {allowance.currency}
               {allowance.amount} /{' '}
               {allowance.renewal.charAt(0).toUpperCase() +
@@ -39,7 +48,9 @@ const Card = ({ allowance }: CardProps) => {
           </div>
         </div>
       ) : (
-        <button className="text-[#569F6E] font-medium">Activate card</button>
+        <button className={`${inter.className} text-[#569F6E] font-medium`}>
+          Activate card
+        </button>
       )}
     </div>
   )
