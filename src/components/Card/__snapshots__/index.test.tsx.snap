@@ -44,7 +44,7 @@ exports[`Card Component renders with a snapshot 1`] = `
         </span>
       </div>
       <div
-        class="w-full h-1 bg-[#DDDDDD] rounded-full"
+        class="bg-[#DDDDDD] w-full h-1 rounded-full"
       >
         <div
           class="bg-[#64D98A] h-full rounded-full"

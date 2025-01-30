@@ -53,7 +53,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
@@ -105,7 +105,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
@@ -157,7 +157,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
@@ -193,11 +193,11 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="bg-[#FAFAFA] text-sm relative"
+              class="text-[#569F6E] text-sm relative"
             >
               Activate card
               <span
-                class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#569F6E] transition-all duration-300 group-hover:w-full"
+                class="bg-[#569F6E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
               />
             </button>
           </div>
@@ -229,11 +229,11 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="bg-[#FAFAFA] text-sm relative"
+              class="text-[#569F6E] text-sm relative"
             >
               Activate card
               <span
-                class="absolute left-0 bottom-0 w-0 h-[2px] bg-[#569F6E] transition-all duration-300 group-hover:w-full"
+                class="bg-[#569F6E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
               />
             </button>
           </div>
@@ -281,7 +281,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
@@ -333,7 +333,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
@@ -385,7 +385,7 @@ exports[`List matches snapshot after data loads 1`] = `
             </span>
           </div>
           <div
-            class="w-full h-1 bg-[#DDDDDD] rounded-full"
+            class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
               class="bg-[#64D98A] h-full rounded-full"
