@@ -53,10 +53,17 @@ exports[`List matches snapshot after data loads 1`] = `
         class="p-2 rounded-full bg-white shadow-lg transition-all duration-200
         "
       >
-        <svgr-url
-          class="w-6 h-6 transition-transform duration-300 "
-          style="stroke: #569F6E;"
-        />
+        <div
+          class="transition-transform duration-300 "
+        >
+          <svgr-url
+            data-testid="icon-palette"
+            height="24"
+            strokewidth="1.5"
+            style="stroke: #569F6E;"
+            width="24"
+          />
+        </div>
       </button>
     </div>
     <h2

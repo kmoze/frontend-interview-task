@@ -32,10 +32,17 @@ exports[`ColourPicker Component renders with a snapshot 1`] = `
       class="p-2 rounded-full bg-white shadow-lg transition-all duration-200
         "
     >
-      <svgr-url
-        class="w-6 h-6 transition-transform duration-300 "
-        style="stroke: #B0A6DE;"
-      />
+      <div
+        class="transition-transform duration-300 "
+      >
+        <svgr-url
+          data-testid="icon-palette"
+          height="24"
+          strokewidth="1.5"
+          style="stroke: #B0A6DE;"
+          width="24"
+        />
+      </div>
     </button>
   </div>
 </div>
