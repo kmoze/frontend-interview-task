@@ -14,7 +14,8 @@ module.exports = {
     'bg-[#F0E7DA]', // Alpine Oat
     'text-[#F0E7DA]',
     'text-[#163B3B]', // Dark alt colour
-    'text-[#569F6E]', // Default green (from Figma design)
+    'bg-[#569F6E]', // Default green (from Figma design)
+    'text-[#569F6E]',
   ],
   theme: {
     colors: {
