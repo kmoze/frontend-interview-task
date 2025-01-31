@@ -13,7 +13,7 @@ const ColourPicker = ({
   onColourSelect,
 }: ColourPickerProps) => {
   return (
-    <div className="fixed bottom-6 right-6 flex gap-2">
+    <div className="fixed bottom-6 right-6 flex gap-2 z-10">
       {Object.entries(colours).map(([name, colour]) => (
         <button
           key={name}
