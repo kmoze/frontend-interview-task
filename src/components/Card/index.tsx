@@ -17,14 +17,14 @@ const CARD_COLOURS = {
   activateBg: 'bg-[#FAFAFA]',
 }
 
+const LIGHT_COLOURS = ['#FFEDA8', '#F0E7DA'] // Alpine Oat & Butter Yellow
+const DARK_ACTIVATE_TEXT_COLOUR = 'text-[#163B3B]' // Darker alternative
+
 const Card = ({ allowance, colour }: CardProps) => {
   const spentPercentage =
     (parseFloat(allowance.spent) / parseFloat(allowance.amount)) * 100
 
   const progressBarColour = colour ? `bg-[${colour}]` : ''
-
-  const LIGHT_COLOURS = ['#FFEDA8', '#F0E7DA'] // Alpine Oat & Butter Yellow
-  const DARK_ACTIVATE_TEXT_COLOUR = 'text-[#163B3B]' // Darker alternative
 
   const activateTextColour =
     colour && LIGHT_COLOURS.includes(colour)
