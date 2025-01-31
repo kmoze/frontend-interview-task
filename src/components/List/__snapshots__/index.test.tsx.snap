@@ -10,13 +10,13 @@ exports[`List matches snapshot after data loads 1`] = `
     >
       <button
         aria-label="Select defaultGreen theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-black hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(86, 159, 110);"
       />
       <button
         aria-label="Select cherryRed theme"
-        class="w-8 h-8 rounded-full border-2 border-black hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         style="background-color: rgb(116, 7, 14);"
       />
@@ -97,7 +97,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 20%;"
             />
@@ -148,7 +148,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 93.33333333333333%;"
             />
@@ -199,7 +199,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 80%;"
             />
@@ -232,11 +232,11 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="text-[#74070E] text-sm relative"
+              class="text-[#569F6E] text-sm relative"
             >
               Activate card
               <span
-                class="bg-[#74070E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
+                class="bg-[#569F6E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
               />
             </button>
           </div>
@@ -268,11 +268,11 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#FAFAFA] p-4 rounded-b-lg"
           >
             <button
-              class="text-[#74070E] text-sm relative"
+              class="text-[#569F6E] text-sm relative"
             >
               Activate card
               <span
-                class="bg-[#74070E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
+                class="bg-[#569F6E] absolute left-0 bottom-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full"
               />
             </button>
           </div>
@@ -322,7 +322,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 100%;"
             />
@@ -373,7 +373,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 29.96666666666667%;"
             />
@@ -424,7 +424,7 @@ exports[`List matches snapshot after data loads 1`] = `
             class="bg-[#DDDDDD] w-full h-1 rounded-full"
           >
             <div
-              class="bg-[#74070E] h-full rounded-full"
+              class="bg-[#569F6E] h-full rounded-full"
               data-testid="progress-bar"
               style="width: 31.25%;"
             />

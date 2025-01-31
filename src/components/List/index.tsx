@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { Allowance } from '@/types/allowances'
 import { Inter } from 'next/font/google'
 import Card from '@/components/Card'
-import { colourOptions } from '@/constants/colourOptions'
-import ColourPicker from '../ColourPicker'
+import { COLOUR_OPTIONS } from '@/constants/colourOptions'
+import { ColourOption } from '@/types/colourTypes'
+import ColourPicker from '@/components/ColourPicker'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const List = () => {
   const [allowances, setAllowances] = useState<Allowance[]>([])
-  const [selectedColour, setSelectedColour] = useState(colourOptions.cherryRed)
+  const [selectedColour, setSelectedColour] = useState<ColourOption>(
+    COLOUR_OPTIONS.defaultGreen
+  )
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +27,7 @@ const List = () => {
   return (
     <div className={`${inter.className}`}>
       <ColourPicker
-        colours={colourOptions}
+        colours={COLOUR_OPTIONS}
         selectedColour={selectedColour}
         onColourSelect={(colour) => setSelectedColour(colour)}
       />

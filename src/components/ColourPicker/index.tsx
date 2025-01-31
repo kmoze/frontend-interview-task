@@ -1,9 +1,10 @@
 import React from 'react'
+import { ColourOption } from '@/types/colourTypes'
 
 type ColourPickerProps = {
-  colours: { [key: string]: string }
-  selectedColour: string
-  onColourSelect: (colour: string) => void
+  colours: { [key: string]: ColourOption }
+  selectedColour: ColourOption
+  onColourSelect: (colour: ColourOption) => void
 }
 
 const ColourPicker = ({
