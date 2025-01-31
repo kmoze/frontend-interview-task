@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { ColourOption } from '@/types/colourTypes'
 import { ICONS } from '@/constants/icons'
+import Icon from '@/components/Icon'
 
 type ColourPickerProps = {
   colours: { [key: string]: ColourOption }
@@ -46,14 +47,16 @@ const ColourPicker = ({
         ${isOpen ? 'bg-gray-100' : ''}`}
         aria-label="Toggle colour picker"
       >
-        {/* <Palette
-          size={24}
-          className={`transition-transform duration-300 text-[${selectedColour}] ${isOpen ? 'rotate-90' : ''}`}
-        /> */}
-        <ICONS.palette
-          className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
-          style={{ stroke: selectedColour }}
-        />
+        <div
+          className={`transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+        >
+          <Icon
+            icon="palette"
+            width={24}
+            height={24}
+            style={{ stroke: selectedColour }}
+          />
+        </div>
       </button>
     </div>
   )
