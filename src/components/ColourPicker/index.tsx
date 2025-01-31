@@ -13,7 +13,7 @@ const ColourPicker = ({
   selectedColour,
   onColourSelect,
 }: ColourPickerProps) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
     <div className="fixed bottom-6 right-6 flex items-end gap-2 z-10">
