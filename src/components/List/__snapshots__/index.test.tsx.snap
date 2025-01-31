@@ -6,44 +6,58 @@ exports[`List matches snapshot after data loads 1`] = `
     class="className"
   >
     <div
-      class="fixed bottom-6 right-6 flex gap-2"
+      class="fixed bottom-6 right-6 flex items-end gap-2 z-10"
     >
-      <button
-        aria-label="Select defaultGreen theme"
-        class="w-8 h-8 rounded-full border-2 border-black hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+      <div
+        class="flex gap-2 transition-all duration-300 ease-in-out opacity-0 translate-y-4 pointer-events-none"
+      >
+        <button
+          aria-label="Select defaultGreen theme"
+          class="w-8 h-8 rounded-full border-2 border-black hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(86, 159, 110);"
-      />
-      <button
-        aria-label="Select cherryRed theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          style="background-color: rgb(86, 159, 110);"
+        />
+        <button
+          aria-label="Select cherryRed theme"
+          class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(116, 7, 14);"
-      />
-      <button
-        aria-label="Select butterYellow theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          style="background-color: rgb(116, 7, 14);"
+        />
+        <button
+          aria-label="Select butterYellow theme"
+          class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(255, 237, 168);"
-      />
-      <button
-        aria-label="Select auraIndigo theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          style="background-color: rgb(255, 237, 168);"
+        />
+        <button
+          aria-label="Select auraIndigo theme"
+          class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(176, 166, 222);"
-      />
-      <button
-        aria-label="Select dillGreen theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          style="background-color: rgb(176, 166, 222);"
+        />
+        <button
+          aria-label="Select dillGreen theme"
+          class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(78, 184, 19);"
-      />
-      <button
-        aria-label="Select alpineOat theme"
-        class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          style="background-color: rgb(78, 184, 19);"
+        />
+        <button
+          aria-label="Select alpineOat theme"
+          class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
           duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-        style="background-color: rgb(240, 231, 218);"
-      />
+          style="background-color: rgb(240, 231, 218);"
+        />
+      </div>
+      <button
+        aria-label="Toggle colour picker"
+        class="p-2 rounded-full bg-white shadow-lg transition-all duration-200
+        "
+      >
+        <svgr-url
+          class="w-6 h-6 transition-transform duration-300 "
+          style="stroke: #569F6E;"
+        />
+      </button>
     </div>
     <h2
       class="text-2xl px-6 pt-6 font-semibold text-[#163B3B]"

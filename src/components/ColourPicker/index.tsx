@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ColourOption } from '@/types/colourTypes'
-import { Palette } from 'lucide-react'
+import { ICONS } from '@/constants/icons'
 
 type ColourPickerProps = {
   colours: { [key: string]: ColourOption }
@@ -46,9 +46,13 @@ const ColourPicker = ({
         ${isOpen ? 'bg-gray-100' : ''}`}
         aria-label="Toggle colour picker"
       >
-        <Palette
+        {/* <Palette
           size={24}
           className={`transition-transform duration-300 text-[${selectedColour}] ${isOpen ? 'rotate-90' : ''}`}
+        /> */}
+        <ICONS.palette
+          className={`w-6 h-6 transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+          style={{ stroke: selectedColour }}
         />
       </button>
     </div>
