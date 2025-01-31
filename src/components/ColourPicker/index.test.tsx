@@ -58,6 +58,56 @@ describe('ColourPicker Component', () => {
     expect(mockOnColourSelect).toHaveBeenCalledWith('#B0A6DE')
   })
 
+  it('toggles colour picker visibility when palette icon is clicked', () => {
+    const { getByLabelText, getByRole } = render(
+      <ColourPicker
+        colours={mockColours}
+        selectedColour="#B0A6DE"
+        onColourSelect={mockOnColourSelect}
+      />
+    )
+
+    const toggleButton = getByLabelText('Toggle colour picker')
+    const colourPickerContainer = getByRole('button', {
+      name: 'Select cherryRed theme',
+    }).parentElement
+
+    expect(colourPickerContainer).toHaveClass('opacity-0')
+    expect(colourPickerContainer).toHaveClass('pointer-events-none')
+
+    fireEvent.click(toggleButton)
+    expect(colourPickerContainer).toHaveClass('opacity-100')
+    expect(colourPickerContainer).not.toHaveClass('pointer-events-none')
+
+    fireEvent.click(toggleButton)
+    expect(colourPickerContainer).toHaveClass('opacity-0')
+    expect(colourPickerContainer).toHaveClass('pointer-events-none')
+  })
+
+  it('hides colour picker after selecting a colour', () => {
+    const { getByLabelText, getByRole } = render(
+      <ColourPicker
+        colours={mockColours}
+        selectedColour="#B0A6DE"
+        onColourSelect={mockOnColourSelect}
+      />
+    )
+
+    const toggleButton = getByLabelText('Toggle colour picker')
+    const colourPickerContainer = getByRole('button', {
+      name: 'Select cherryRed theme',
+    }).parentElement
+
+    fireEvent.click(toggleButton)
+    expect(colourPickerContainer).toHaveClass('opacity-100')
+
+    const cherryRedButton = getByLabelText('Select cherryRed theme')
+    fireEvent.click(cherryRedButton)
+
+    expect(colourPickerContainer).toHaveClass('opacity-0')
+    expect(colourPickerContainer).toHaveClass('pointer-events-none')
+  })
+
   it('renders with a snapshot', () => {
     const { container } = render(
       <ColourPicker
