@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { ColourOption } from '@/types/colourTypes'
-import { ICONS } from '@/constants/icons'
 import Icon from '@/components/Icon'
 
 type ColourPickerProps = {

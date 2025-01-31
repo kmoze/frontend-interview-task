@@ -22,6 +22,17 @@ describe('List', () => {
     expect(screen.getByText('WFH')).toBeInTheDocument()
   })
 
+  it('renders the ColourPicker', async () => {
+    render(<List />)
+
+    await waitFor(() => {
+      expect(screen.getByText(data[0].name)).toBeInTheDocument()
+    })
+
+    const paletteIcon = screen.getByLabelText('Toggle colour picker')
+    expect(paletteIcon).toBeInTheDocument()
+  })
+
   it('matches snapshot after data loads', async () => {
     const { container } = render(<List />)
 
