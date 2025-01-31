@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColourPicker Component renders with a snapshot 1`] = `
+<div>
+  <div
+    class="fixed bottom-6 right-6 flex gap-2"
+  >
+    <button
+      aria-label="Select Red theme"
+      class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      style="background-color: rgb(255, 0, 0);"
+    />
+    <button
+      aria-label="Select Green theme"
+      class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      style="background-color: rgb(0, 255, 0);"
+    />
+    <button
+      aria-label="Select Blue theme"
+      class="w-8 h-8 rounded-full border-2 border-gray-100 hover:scale-110 transition-transform hover:-translate-y-0.5 hover:shadow-lg hover:border-gray-500
+          duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      style="background-color: rgb(0, 0, 255);"
+    />
+  </div>
+</div>
+`;
