@@ -1,12 +1,13 @@
 import { render, fireEvent } from '@testing-library/react'
 import ColourPicker from '@/components/ColourPicker'
 import '@testing-library/jest-dom'
+import { ColourOption } from '@/types/colourTypes'
 
 describe('ColourPicker Component', () => {
-  const mockColours = {
-    Red: '#ff0000',
-    Green: '#00ff00',
-    Blue: '#0000ff',
+  const mockColours: { [key: string]: ColourOption } = {
+    cherryRed: '#74070E',
+    butterYellow: '#FFEDA8',
+    auraIndigo: '#B0A6DE',
   }
 
   const mockOnColourSelect = jest.fn()
@@ -15,29 +16,29 @@ describe('ColourPicker Component', () => {
     const { getByLabelText } = render(
       <ColourPicker
         colours={mockColours}
-        selectedColour=""
+        selectedColour="#B0A6DE"
         onColourSelect={mockOnColourSelect}
       />
     )
 
-    expect(getByLabelText('Select Red theme')).toBeInTheDocument()
-    expect(getByLabelText('Select Green theme')).toBeInTheDocument()
-    expect(getByLabelText('Select Blue theme')).toBeInTheDocument()
+    expect(getByLabelText('Select cherryRed theme')).toBeInTheDocument()
+    expect(getByLabelText('Select butterYellow theme')).toBeInTheDocument()
+    expect(getByLabelText('Select auraIndigo theme')).toBeInTheDocument()
   })
 
   it('applies correct border styling for the selected colour', () => {
     const { getByLabelText } = render(
       <ColourPicker
         colours={mockColours}
-        selectedColour="#00ff00"
+        selectedColour="#B0A6DE"
         onColourSelect={mockOnColourSelect}
       />
     )
 
-    const selectedButton = getByLabelText('Select Green theme')
+    const selectedButton = getByLabelText('Select auraIndigo theme')
     expect(selectedButton).toHaveClass('border-black')
 
-    const otherButton = getByLabelText('Select Red theme')
+    const otherButton = getByLabelText('Select cherryRed theme')
     expect(otherButton).toHaveClass('border-gray-100')
   })
 
@@ -45,23 +46,23 @@ describe('ColourPicker Component', () => {
     const { getByLabelText } = render(
       <ColourPicker
         colours={mockColours}
-        selectedColour=""
+        selectedColour="#B0A6DE"
         onColourSelect={mockOnColourSelect}
       />
     )
 
-    const redButton = getByLabelText('Select Red theme')
-    fireEvent.click(redButton)
+    const indigoButton = getByLabelText('Select auraIndigo theme')
+    fireEvent.click(indigoButton)
 
     expect(mockOnColourSelect).toHaveBeenCalledTimes(1)
-    expect(mockOnColourSelect).toHaveBeenCalledWith('#ff0000')
+    expect(mockOnColourSelect).toHaveBeenCalledWith('#B0A6DE')
   })
 
   it('renders with a snapshot', () => {
     const { container } = render(
       <ColourPicker
         colours={mockColours}
-        selectedColour=""
+        selectedColour="#B0A6DE"
         onColourSelect={mockOnColourSelect}
       />
     )
